@@ -1,28 +1,32 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*,*:before,*:after{box-sizing:border-box}html{font-size:16px;font-family:Arial, sans-serif;line-height:1.5;color:#444}img{max-width:100%}
 
-/* START STYLES ===================================================*/
+/* ================================================================*/
+/* General */
+/* ================================================================*/
 
 html {
 	font-size: 16px;
 	font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';
+	font-weight: 300;
 	line-height: 1.5;
 	color: #fff;
 	background-color: #17482f; /* dark green */
 	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 header {
-	font-family: 'Gotham SSm 4r', 'Gotham SSm A', 'Gotham SSm B';
 	background-color: #fff;
 	color: #cc0b2a; /* EMA Red */
-	padding: 1rem;
 }
 
 h1,
 h2,
 h3,
 h4 {
-	font-weight: normal;
+	font-weight: 200;
+	margin: 0 0 1rem;
 }
 
 a,
@@ -32,7 +36,109 @@ a:visited {
 	text-decoration:none
 }
 
+p {
+	text-align: left;
+}
 
+.content {
+	padding: 1rem 5%;
+}
+
+.container:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+
+/* ================================================================*/
+/* Form */
+/* ================================================================*/
+
+form {
+	background-color: #fff;
+	padding: 1rem 1rem 2rem;
+	box-shadow: 0 .4rem .9rem #1e3728;
+	border: 2px solid #257c25; /* medium green */
+}
+
+.player-form {
+	padding: 1rem 1rem 1.5rem;
+}
+
+form p {
+	font-size: .9rem;
+	color: #17482f;
+	text-align: center;
+	font-family: 'Sentinel SSm 3i', 'Sentinel SSm A', 'Sentinel SSm B';
+	font-weight: 300;
+	font-style: italic;
+}
+
+form .container {
+	max-width: 255px;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+	padding-right: .3rem;
+}
+
+label {
+	display: block;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	color: #17482f;
+	float: left;
+	text-align: left;
+	line-height: 1;
+}
+
+.player-form label {
+	text-transform: none;
+	font-family: 'Sentinel SSm 3i', 'Sentinel SSm A', 'Sentinel SSm B';
+	font-weight: 300;
+	font-style: italic;
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 1rem;
+	float: none;
+}
+
+label span {
+	font-weight: 700;
+	font-family: 'Gotham SSm 7r', 'Gotham SSm A', 'Gotham SSm B';
+}
+
+input[type="tel"],
+input[type="text"] {
+	display: block;
+	color: #339933; 
+	padding: .4rem .5rem;
+	background: #ecebeb;
+	border: 1px solid #257c25;
+	font-size: 1.3rem;
+	float: right;
+	width: 60px;
+	text-align: center;
+	-webkit-appearance: none;
+	border-radius: .3rem;
+}
+
+.player-form input[type="tel"],
+.player-form input[type="text"] {
+	float: none;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+button {
+	background: #339933;
+	border: 1px solid #257c25;
+	color: #fff;
+	box-shadow: 0 0.2rem 0.3rem #d2d2d2;
+	padding: .3rem 0.6rem;
+	text-transform: uppercase;
+	border-radius: .3rem;
+}
 
 
 

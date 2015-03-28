@@ -1,8 +1,11 @@
-<div ng-controller="scorecard" class="mobile-view">
+<div ng-controller="scorecard">
 	<h1>Scorecard</h1>
 	<form>
-		<label>Enter number of strokes for hole {{nextHole}}: </label>
-		<input type="text" name="score" ng-model="item.score"/>
+		<p>Enter number of strokes</p>
+		<div class="container">
+			<label>hole <span>{{nextHole}}</span></label>
+			<input type="tel" name="score" ng-model="item.score"/>
+		</div><!-- .container -->
 		<button ng-click="saveScore()" class="btn btn-primary">Record Strokes</button>
 	</form>
 </div>
