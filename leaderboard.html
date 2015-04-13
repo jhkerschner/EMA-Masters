@@ -1,55 +1,53 @@
 <div ng-controller="leaderboard" class="lb-container">
-	<div class="content">
-		<h1>EMA Masters Leadeboard</h1>
-		<table border="1">
-			<tr>
-				<td>Name</td>
-				<td>1</td>
-				<td>2</td>
-				<td>3</td>
-				<td>4</td>
-				<td>5</td>
-				<td>6</td>
-				<td>7</td>
-				<td>8</td>
-				<td>9</td>
-				<td>10</td>
-				<td>11</td>
-				<td>12</td>
-				<td>13</td>
-				<td>14</td>
-				<td>15</td>
-				<td>16</td>
-				<td>17</td>
-				<td>18</td>
-				<td>Total</td>
-			</tr>
+	<h1>EMA Masters Leaderboard</h1>
+	<table class="scoreboard">
+		<tr class="head-row">
+			<td>Name</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+			<td>11</td>
+			<td>12</td>
+			<td>13</td>
+			<td>14</td>
+			<td>15</td>
+			<td>16</td>
+			<td>17</td>
+			<td>18</td>
+			<td>Total</td>
+		</tr>
 
-			<tr ng-repeat="item in list">
-				<td>{{ item.player }}</td>
+		<tr ng-repeat="item in list">
+			<td class="player-name">{{ item.player }}</td>
 
-				
-				<td>{{ item.holes.h1 }}</td>
-				<td>{{ item.holes.h2 }}</td>
-				<td>{{ item.holes.h3 }}</td>
-				<td>{{ item.holes.h4 }}</td>
-				<td>{{ item.holes.h5 }}</td>
-				<td>{{ item.holes.h6 }}</td>
-				<td>{{ item.holes.h7 }}</td>
-				<td>{{ item.holes.h8 }}</td>
-				<td>{{ item.holes.h9 }}</td>
-				<td>{{ item.holes.h10 }}</td>
-				<td>{{ item.holes.h11 }}</td>
-				<td>{{ item.holes.h12 }}</td>
-				<td>{{ item.holes.h13 }}</td>
-				<td>{{ item.holes.h14 }}</td>
-				<td>{{ item.holes.h15 }}</td>
-				<td>{{ item.holes.h16 }}</td>
-				<td>{{ item.holes.h17 }}</td>
-				<td>{{ item.holes.h18 }}</td>
+			
+			<td>{{ item.holes.h1 }}</td>
+			<td>{{ item.holes.h2 }}</td>
+			<td>{{ item.holes.h3 }}</td>
+			<td>{{ item.holes.h4 }}</td>
+			<td>{{ item.holes.h5 }}</td>
+			<td>{{ item.holes.h6 }}</td>
+			<td>{{ item.holes.h7 }}</td>
+			<td>{{ item.holes.h8 }}</td>
+			<td>{{ item.holes.h9 }}</td>
+			<td>{{ item.holes.h10 }}</td>
+			<td>{{ item.holes.h11 }}</td>
+			<td>{{ item.holes.h12 }}</td>
+			<td>{{ item.holes.h13 }}</td>
+			<td>{{ item.holes.h14 }}</td>
+			<td>{{ item.holes.h15 }}</td>
+			<td>{{ item.holes.h16 }}</td>
+			<td>{{ item.holes.h17 }}</td>
+			<td>{{ item.holes.h18 }}</td>
 
-				<td>{{ item.total }}</td>
-			</tr>
-		</table>
-	</div><!-- .lb-container -->
-</div>
+			<td>{{ item.total }}</td>
+		</tr>
+	</table>
+</div><!-- .lb-container -->

@@ -9,7 +9,7 @@ html {
 	font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';
 	font-weight: 300;
 	line-height: 1.5;
-	color: #fff;
+	color: #ebe9e9;
 	background-color: #17482f; /* dark green */
 	text-align: center;
 	-webkit-font-smoothing: antialiased;
@@ -17,7 +17,7 @@ html {
 }
 
 header {
-	background-color: #fff;
+	background-color: #ebe9e9;
 	color: #cc0b2a; /* EMA Red */
 }
 
@@ -55,8 +55,9 @@ p {
 /* Form */
 /* ================================================================*/
 
-form {
-	background-color: #fff;
+form,
+.scoreboard {
+	background-color: #ebe9e9;
 	padding: 1rem 1rem 2rem;
 	box-shadow: 0 .4rem .9rem #1e3728;
 	border: 2px solid #257c25; /* medium green */
@@ -133,7 +134,7 @@ input[type="text"] {
 button {
 	background: #339933;
 	border: 1px solid #257c25;
-	color: #fff;
+	color: #ebe9e9;
 	box-shadow: 0 0.2rem 0.3rem #d2d2d2;
 	padding: .3rem 0.6rem;
 	text-transform: uppercase;
@@ -141,8 +142,35 @@ button {
 }
 
 
+/* ================================================================*/
+/* scroreboard */
+/* ================================================================*/
 
+.scoreboard {
+	width: 100%;
+	background-color: #ebe9e9;
+	color: #2f2f2f;
+	font-family: 'Gotham SSm 5r', 'Gotham SSm A', 'Gotham SSm B';
+	font-weight: 500;
+}
 
+.scoreboard td {
+	width: 4.5%;
+}
+
+.scoreboard td:first-child {
+	width: 12%;
+}
+
+.scoreboard td:last-child {
+	width: 7%;
+}
+
+.head-row {
+	font-weight: 700;
+	font-family: 'Gotham SSm 7r', 'Gotham SSm A', 'Gotham SSm B';
+	font-size: 1.2rem;
+}
 
 
 
