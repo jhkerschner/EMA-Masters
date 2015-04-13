@@ -168,6 +168,10 @@ button {
 	font-weight: 500;
 }
 
+.scoreboard tr:nth-child(odd) {
+	background-color: #d1dad5;
+}
+
 .scoreboard td {
 	width: 4.3%;
 	padding: .2rem 0;
