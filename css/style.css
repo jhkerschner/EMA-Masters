@@ -149,29 +149,64 @@ button {
 .scoreboard {
 	width: 100%;
 	background-color: #ebe9e9;
-	color: #2f2f2f;
 	font-family: 'Gotham SSm 5r', 'Gotham SSm A', 'Gotham SSm B';
 	font-weight: 500;
 }
 
 .scoreboard td {
-	width: 4.5%;
+	width: 4.3%;
+	padding: .2rem 0;
+	border: 1px solid #7b7b7b;
+	color: #1e5d3d;
+	font-size: 1.3rem;
 }
 
 .scoreboard td:first-child {
-	width: 12%;
+	width: 15%;
+	color: #2f2f2f;
+	text-align: left;
+	padding-left: 1rem;
 }
 
 .scoreboard td:last-child {
-	width: 7%;
+	width: 8%;
+	color: #2f2f2f;
 }
 
-.head-row {
+.head-row td,
+.head-row td:first-child,
+.head-row td:last-child {
+	color: #ebe9e9;
 	font-weight: 700;
 	font-family: 'Gotham SSm 7r', 'Gotham SSm A', 'Gotham SSm B';
-	font-size: 1.2rem;
+	font-size: 1.5rem;
+	background: #339933;
+	border-color: #257c25;
 }
 
 
+/* ================================================================*/
+/* complete */
+/* ================================================================*/
+
+.complete p {
+	text-align: center;
+	padding: 1rem;
+}
+
+.you-scored {
+	font-size: 1.5rem;
+	background: #339933;
+	color: #ebe9e9;
+	padding: .3rem 0.6rem;
+	text-transform: uppercase;
+	border-radius: .3rem;
+	box-shadow: 0 .4rem .9rem #1e3728;
+	border: 2px solid #257c25; /* medium green */
+}
+
+.you-scored span {
+	display: block;
+}
 
 
