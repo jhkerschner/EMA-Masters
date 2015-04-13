@@ -50,6 +50,21 @@ p {
 	display: block;
 }
 
+.logo {
+	background-color: #ebe9e9;
+	padding: 2rem 2.2rem 2rem 1.8rem;
+	margin: 2rem;
+}
+
+.intro-logo {
+	padding: 1.5rem 27% 2rem 22%;
+	margin: -1rem -5.5% 0 -5.5%;
+}
+
+.logo img {
+	max-width: 227px;
+}
+
 
 /* ================================================================*/
 /* Form */
