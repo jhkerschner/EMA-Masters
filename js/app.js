@@ -2,6 +2,37 @@ var currHole = 1;
 var userID;
 var myApp = angular.module("EMAMasters", ["ngRoute","firebase"]);
 var totalScore = 0;
+var NUMBER_REGEXP = /^\d+$/;
+
+myApp.directive('number', function() {
+  return {
+    require: 'ngModel',
+    link: function(scope, elm, attrs, ctrl) {
+      ctrl.$parsers.unshift(function(viewValue) {
+        if (NUMBER_REGEXP.test(viewValue)) {
+          // it is valid
+          ctrl.$setValidity('number', true);
+          return viewValue;
+        } else {
+          // it is invalid, return undefined (no model update)
+          ctrl.$setValidity('number', false);
+          return undefined;
+        }
+      });
+    }
+  };
+});
+
+myApp.directive('autofocus', ['$timeout', function($timeout) {
+  return {
+    restrict: 'A',
+    link : function($scope, $element) {
+      $timeout(function() {
+        $element[0].focus();
+      });
+    }
+  }
+}]);
 
 myApp.controller('player', ['$scope', '$firebase', '$location',
   function($scope, $firebase, $location) {

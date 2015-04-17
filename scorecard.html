@@ -2,13 +2,13 @@
 
 	<h1>Scorecard</h1>
 
-	<form>
+	<form name="myForm">
 		<p>Enter number of strokes</p>
 		<div class="container">
 			<label>hole <span>{{nextHole}}</span></label>
-			<input type="tel" name="score" ng-model="item.score" />
+			<input type="tel" name="score" autofocus ng-model="item.score" maxlength="2" ng-class="{error: myForm.score.$error.number && !myForm.score.$pristine}" number />
 		</div><!-- .container -->
-		<button ng-click="saveScore()" class="btn btn-primary">Record Strokes</button>
+		<button ng-click="saveScore()" ng-disabled="myForm.$invalid" class="btn btn-primary">Record Strokes</button>
 	</form>
 
 </div>
