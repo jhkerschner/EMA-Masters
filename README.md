@@ -11,3 +11,6 @@ If you are going to want to test out the functionality at all, you will need to 
 <strong>round-complete.html</strong> - This view just lets the user know they are done, and shows their total score.
 
 <strong>leaderboard.html</strong> - This view is the leaderboard. It automatically updates based on score. Depending on time, I might add more functionality to this to show over and under par.
+
+
+This has absolutely nothing to do with this project, I'm just trying to get a free t-shirt!
