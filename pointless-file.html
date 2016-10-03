@@ -1,0 +1,14 @@
+<div ng-controller="scorecard">
+
+	<h1>This is a pointless file that was created to get a free t-shirt. Ignore it!</h1>
+
+	<form name="myForm">
+		<p>Enter number of strokes</p>
+		<div class="container">
+			<label>hole <span>{{nextHole}}</span></label>
+			<input type="tel" name="score" autofocus ng-model="item.score" maxlength="2" ng-class="{error: myForm.score.$error.number && !myForm.score.$pristine}" number />
+		</div><!-- .container -->
+		<button ng-click="saveScore()" ng-disabled="myForm.$invalid" class="btn btn-primary">Record Strokes</button>
+	</form>
+
+</div>
